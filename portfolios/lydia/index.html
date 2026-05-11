@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Links</title>
+    <style>
+        :root {
+            --bg-color: #f0f2f5;
+            --text-color: #1c1e21;
+            --accent-color: #007bff;
+            --card-bg: #ffffff;
+            --secondary-text: #606770;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 5px solid var(--card-bg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+
+        .bio {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--secondary-text);
+            margin-bottom: 30px;
+        }
+
+        /* Grouping Section */
+        .category-title {
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin: 30px 0 12px 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--secondary-text);
+        }
+
+        /* Links */
+        .link-card {
+            background: var(--card-bg);
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            border-radius: 15px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .link-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=300&h=300" alt="Alex Rivera" class="profile-pic">
+        <h1>Lydia</h1>
+        <p class="bio">
+            Full-stack developer by day, digital illustrator by night. <br>
+            Building open-source tools and sharing my creative journey.
+        </p>
+
+        <div class="category-title">Featured Work</div>
+        <a href="https://github.com" target="_blank" class="link-card">💻 Latest Web Project</a>
+        <a href="#" target="_blank" class="link-card">🎨 Digital Art Gallery</a>
+        <a href="#" target="_blank" class="link-card">📊 UI Design Case Study</a>
+
+        <div class="category-title">Resources</div>
+        <a href="#" target="_blank" class="link-card">📚 Recommended Reading</a>
+        <a href="#" target="_blank" class="link-card">🎙️ Tech Talk Podcast</a>
+
+        <div class="category-title">Connect</div>
+        <a href="https://linkedin.com" target="_blank" class="link-card">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" class="link-card">Twitter / X</a>
+        <a href="mailto:hello@example.com" class="link-card">📧 Get In Touch</a>
+
+        <footer>
+            &copy; 2026 Alex Rivera
+        </footer>
+    </div>
+
+</body>
+</html>
